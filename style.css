@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 400;
+  padding: 2rem;
+  min-height: 100svh;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  max-width: 1000px;
+}
+
+.cards-container,
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 360px;
+  height: 250px;
+  position: relative;
+  border-radius: 0.35rem;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.048);
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card.two {
+  border-color: hsl(0, 78%, 62%);
+}
+.card.three {
+  border-color: hsl(212, 86%, 64%);
+  margin-top: 2rem;
+}
+.card.four {
+  border-color: hsl(34, 97%, 64%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 30px;
+}
+
+header p {
+  max-width: 400px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+header h1 span:first-of-type {
+  color: hsl(229, 6%, 66%);
+}
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card img {
+  width: 2.5rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+@media screen and (min-width: 850px) {
+  .cards-container {
+    flex-direction: row;
+  }
+}
